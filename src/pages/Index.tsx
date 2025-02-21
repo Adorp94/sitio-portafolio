@@ -1,12 +1,17 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import Navbar from '../components/Navbar';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-white">
+      <Navbar />
+      <main className="pt-28 px-6">
+        <div className="max-w-[1400px] mx-auto min-h-[calc(100vh-8rem)] flex items-center justify-center">
+          <div className="w-full aspect-[16/9] bg-gray-100 rounded-lg">
+            {/* Aquí irá tu imagen del hero */}
+          </div>
+        </div>
+      </main>
     </div>
   );
 };
