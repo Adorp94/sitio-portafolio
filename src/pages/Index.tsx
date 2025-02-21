@@ -10,11 +10,14 @@ const Index = () => {
   const pixelSize = Math.min(Math.max(mousePosition.x / 30, 1), 64)
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="h-screen bg-white flex flex-col">
       <Navbar />
-      <main className="pt-28 px-24">
-        <div className="max-w-[1400px] mx-auto min-h-[calc(100vh-8rem)] flex items-center justify-center" ref={containerRef}>
-          <div className="relative w-full aspect-[16/9] overflow-hidden rounded-lg">
+      <main className="flex-1 px-24 flex items-center justify-center">
+        <div 
+          className="max-w-[1400px] w-full h-[calc(100vh-12rem)] mx-auto flex items-center justify-center" 
+          ref={containerRef}
+        >
+          <div className="relative w-full max-h-[70vh] aspect-[16/9] overflow-hidden rounded-lg">
             <PixelateSvgFilter id="pixelate-filter" size={pixelSize} crossLayers />
             <div
               className="w-full h-full"
