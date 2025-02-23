@@ -6,7 +6,7 @@ const Navbar = () => {
     <nav className="fixed w-full px-6 py-8 bg-white/80 backdrop-blur-sm z-50">
       <div className="max-w-[1400px] mx-auto flex justify-between items-center">
         <Link to="/" className="text-sm font-medium hover:opacity-70 transition-opacity">
-          Will Gran
+          Adolfo Rangel
         </Link>
         <span className="text-sm text-gray-500">
           Available for work
@@ -26,7 +26,7 @@ const Navbar = () => {
           href="mailto:william@graanefors.com" 
           className="text-sm hover:opacity-70 transition-opacity"
         >
-          william@graanefors.com
+          adolfo@heyaylabs.com
         </a>
       </div>
     </nav>
